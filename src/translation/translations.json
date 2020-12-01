@@ -1,10 +1,5 @@
 {
-    "key_this": {
-        "de": "das",
-        "en": "this"
-    },
-    "code": {
-        "de": "programmieren",
-        "en": "code"
+    "help_title": {
+        "en": "Cinecord Command List"
     }
 }
