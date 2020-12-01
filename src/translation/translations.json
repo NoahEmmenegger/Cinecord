@@ -1,5 +1,8 @@
 {
     "help_title": {
         "en": "Cinecord Command List"
+    },
+    "error_not_moderator": {
+        "en": "You need `MANAGE_GUILD` permissions to use this command."
     }
 }
