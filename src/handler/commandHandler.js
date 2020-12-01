@@ -23,15 +23,13 @@ function isModerator(message) {
 
 module.exports = {
     commandHandler(message) {
-        // build better guard
-        if (!message.content) return;
+        if (!message.content || message.channel.type === "dm" || message.author.bot) return;
 
         const arguments = message.content.split(' ')
-        const commandIdentifier = arguments.shift().slice(1)
+        const commandIdentifier = arguments.shift().slice(1).toLowerCase()
         const command = commands.find(x => x.name === commandIdentifier)
 
         if (!command) {
-            console.log('no command found')
             return;
         }
 
